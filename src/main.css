@@ -1,0 +1,445 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x:hidden;
+    max-width:100%;
+    height: 100vh;
+    
+}
+header{
+    display:flex;
+    background:rgb(43, 199, 43);
+    padding:15px 50px;
+    align-items:center;
+    justify-content:space-between;
+}
+header h1{
+   color:white;
+    font-style: italic;
+    font-size:35px;
+text-transform:capitalize;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.word-place{
+    word-spacing:1px;
+    letter-spacing:1px;
+    line-height:28px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.btn{
+    display:none;
+}
+nav ul li{
+    list-style:none;
+    display:inline;
+    margin-right:20px;
+   letter-spacing:1px;
+   
+   text-align:center;
+}
+nav ul li:focus{
+    background:white;
+    color:green;
+    padding:2px 7px;
+}
+nav ul li .inside-nav:hover{
+border-top:3px solid white;
+border-bottom: 3px solid white;
+border-radius:3px;
+padding:5px 7px;
+}
+.inside-nav{
+    cursor: pointer;
+        transition: all 1.5s ease;
+    text-align:center;
+    color: white;
+    font-size:21px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform:capitalize;
+    text-decoration:none;
+}
+.images-home{
+  max-width:100%;
+    height:100%;
+  
+}
+.image-container{
+    background-image:url('images/Amala.jpeg');
+    height:420px;
+    border-radius:10px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:450px;
+    animation-name:foodimage;
+    animation-duration:8s;
+   
+animation-iteration-count: infinite;
+}
+.display-home{
+   
+    display:flex;
+justify-content: space-around;
+padding:80px 100px;
+
+}
+.word-place{
+
+  margin-right:200px;
+  color:black;
+}
+.word-place h2{
+    text-transform:capitalize;
+    word-spacing:1px;
+    letter-spacing:1px;
+    font-size:40px;
+  
+    margin-bottom:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.word-place span{
+    color:rgb(148, 219, 148);
+    font-family:cursive;
+    
+}
+.word-place p{
+    font-size:16px;
+}
+
+.word-place h4{
+    margin-bottom:30px;
+    text-transform:capitalize;
+    font-size:28px;
+    font-family:cursive;
+}
+
+.input-flex{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+}
+.input-flex input[type='radio']{
+   background-color:green;
+margin-right:10px;
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top:50px;
+    max-width:100%;
+}
+.input-field input{
+    height:45px;
+    width:350px;
+    border:none;
+    outline:none;
+    color:white;
+    background:green;
+    padding-left:10px;
+    border-radius:10px;
+    transition:all 1s ease;
+}
+.input-field input:focus{
+    background:none;
+    border-top:4px solid  green;
+    border-bottom: 4px solid green;
+    color:black;
+}
+.input-field:hover>button{
+    background:green;
+    color:black;
+    outline:none;
+    border:none;
+}
+.input-field input::placeholder{
+    color:white;
+    font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+}
+.input-field input:focus::placeholder{
+    color:black;
+    
+}
+.input-field button{
+    height:40px;
+    width:40px;
+    background:green;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    outline:none;
+    border:none;
+}
+.input-field button:hover{
+    color:white;
+border-top: 4px solid green;
+    border-bottom: 4px solid green;
+}
+@keyframes foodimage{
+    0%{
+         background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/roastedchicken.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+        }
+    20%{
+       background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/friedrice.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+    }
+    40%{
+         background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/shawarma.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+    }
+60%{
+     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/ogbono.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+}
+80%{
+     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/meatpie.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+}
+100%{
+     background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('images/beans.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+    background-size: cover;
+    }
+}
+.main-camp{
+    display:flex;
+    justify-content:space-between;
+    margin:30px 15px;
+    align-items:center;
+    box-shadow:5px 5px 5px 3px rgba(100,200,100,0.2);
+    
+    padding:15px 20px;
+}
+.main-pics{
+    margin-right:20px;
+}
+.food-container{
+   
+    margin-top:80px;
+}
+.food-container h2{
+    color: black;
+    margin-left:50px;
+    text-transform:capitalize;
+    font-size:35px;
+}
+.images-food{
+    max-width:100%;
+    height:100%;
+}
+.images-food img{
+    height:350px;
+    width:600px;
+    border-radius:20px;
+}
+.camp-item p{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:450;
+    line-height:35px;
+    word-spacing:2px;
+    letter-spacing:1px;
+}
+@media(max-width:1024px){
+.display-home{
+padding:80px 30px;
+}
+.main-pics{
+    margin-right:30px;
+}
+.image-food img{
+    width:300px;
+}
+.word-place{
+    margin-right:100px;
+    
+}
+.word-place{
+    line-height: 30px;
+}
+    header h1{
+        font-size:33px;
+    }
+    .inside-nav{
+        font-size:19px;
+    }
+}
+@media(max-width:900px){
+    .display-home{
+        flex-direction:column;
+      }
+      .main-camp{
+        flex-direction:column;
+      }
+.word-place{
+    margin-bottom:50px;
+    margin-right:20px;
+}
+.images-food img{
+    width:450px;
+}
+        .btn {
+            display: block;
+        }
+    
+        header nav {
+            background: green;
+            height: 0%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+    
+            opacity: 0;
+            transition: all 2s ease;
+        }
+    
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    
+        header .dislocate-nav {
+            opacity: 1;
+            height: 100%;
+        }
+    
+        nav ul li {
+            display: block;
+            font-size: 27px;
+            font-family: cursive;
+            margin-bottom: 30px;
+        }
+    
+        .btn {
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+    
+        .btn:hover {
+            color: cyan;
+        }
+.image-container{
+    height:500px;
+    width:450px;
+}
+}
+@media(max-width:485px){
+    .main-camp{
+        flex-direction:column;
+    }
+    .main-pics{
+        margin-right:5px;
+    }
+        .display-home{
+            padding:50px 20px;
+        }
+    .input-field input{
+        height:40px;
+        width:250px;
+    }
+    .food-container h2{
+        margin-left:30px;
+        font-size:25px;
+    }
+    .images-food img{
+        width:320px;
+        height:250px;
+        margin-bottom:40px;
+    }
+    .camp-item p{
+        font-size:14px;
+    }
+.word-place h2{
+    font-size:28px;
+}
+.word-place h4{
+    font-size:24px;
+}
+.word-place p{
+    font-size:15px;
+}
+.images-home{
+    max-width:100%;
+    height:100%;
+}
+.image-container{
+    height:300px;
+    width:320px;
+}
+    header h1{
+        font-size:27px;
+    }
+    .btn{
+        display:block;
+    }
+   header nav{
+        background:green;
+        height:0%;
+        width:100%;
+position:absolute;
+top:0;
+left:0;
+right:0;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+z-index:2;
+
+opacity:0;
+transition:all 2s ease;
+    }
+   
+    .close{
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+header .dislocate-nav{
+    opacity:1;
+    height:100%;
+}
+    nav ul li{
+        display:block;
+        font-size:27px;
+        font-family:cursive;
+        margin-bottom: 30px;
+    }
+    .btn{
+        color:white;
+        font-size:22px;
+        cursor:pointer;
+transition:all 1s ease;
+    }
+    .btn:hover{
+        color: cyan;
+    }
+}
