@@ -223,7 +223,7 @@ background-position: center;
     justify-content:space-between;
     margin:30px 15px;
     align-items:center;
-    box-shadow:5px 5px 5px 3px rgba(100,200,100,0.2);
+    box-shadow:5px 5px 5px 5px rgba(100,200,100,0.2);
     
     padding:15px 20px;
 }
